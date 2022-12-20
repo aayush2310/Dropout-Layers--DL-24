@@ -1,0 +1,30 @@
+Dropout layer is used when our neural network overfits.
+ANN-prone to overfitting because they are very complex
+Possible Solutions of overfitting:-
+1)Add more data
+2)Reduce complexity of your network
+3)Early stopping
+4)Regularization
+5)Drop out
+
+Concept-Dropout
+We train the neural network,we see that there are a lot of connections,so the model is overfitting,now we randomly dropout(turn off) some of the nodes in each epoch
+How can the performance increase by breaking the neural network?
+=>Dropout layers:-i)reduce the number of nodes.
+                  ii)make the nodes such that it does not focus on any particular type of pattern rather generalises.
+                  
+                  It is possible that in a neural network some of the network having high weights than other,so it means that there is a special focus on any particular
+                  type of pattern,this is reduced by using dropout as in dropout we randomly switch the nodes off.
+                  So the inputs get balanced and distributed.
+                  
+
+Dropout-Random Forest Analogy:-
+In random forest lets say we have 10 rows and we do column sampling to make the decision tree,so we are making 100 decision tree on the basis of column sampling,so we get
+an ensemble of 100 decision trees,now we pass a row and predict its value to be 1 or 0 based on majority.It is an analogy to the drop out.
+
+Dropout is aplied only while training and not while testing.
+If probability of dropout for a layer is 0.25,then we find the weight of the corresponding link connected to each node as w,then while testing the weight of that connection
+is taken to be as w(1-0.25)
+Logical as probability of switching off=0.25
+                                    on =1-0.25
+                                    
